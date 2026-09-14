@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcadia - Architecture</title>
     <!-- Google Fonts -->
@@ -21,14 +22,22 @@
     <!-- Header & Hero Section -->
     <header class="hero-section">
         <nav class="navbar">
-            <div class="logo">ARCADIA</div>
+            <a href="index.html" class="logo">ARCADIA</a>
+
+            <!-- این دکمه حتماً باید اینجا باشد -->
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
             <ul class="nav-links">
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="journal.html">JOURNAL</a></li>
+                <li class="mobile-only-btn"><a href="contact.html">START A PROJECT</a></li>
             </ul>
-            <a href="#" class="btn btn-outline">START A PROJECT &rarr;</a>
+
+            <a href="contact.html" class="btn btn-outline desktop-btn">START A PROJECT &rarr;</a>
         </nav>
 
         <div class="hero-content">
@@ -217,13 +226,13 @@
     <!-- Main Footer CTA Section (3 Columns) -->
     <footer class="footer-cta" style="background-image: url('assets/footer-bg.webp');">
         <div class="footer-content-grid">
-            
+
             <!-- Column 1: Title & Button -->
             <div class="footer-col footer-col-left">
                 <h2>Let's create<br>your next space</h2>
                 <a href="contact.html" class="btn btn-outline footer-btn">START A PROJECT &rarr;</a>
             </div>
-            
+
             <!-- Column 2: Contact Info -->
             <div class="footer-col footer-col-center">
                 <div class="contact-item">
