@@ -4,7 +4,7 @@ A clean, minimalist, and fully responsive multi-page website designed for an arc
 
 ## 🔗 Live Demo
 > **[Click here to view the live website](https://parsaberah.github.io/arcadia-architecture/)**  
-*(Note: Replace the link above with your actual GitHub Pages URL once deployed)*
+
 
 ## ✨ Features
 - **Multi-page Structure:** Includes Home, Projects, About, Services, Journal, and Contact pages.
