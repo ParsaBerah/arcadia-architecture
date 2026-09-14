@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Start a Project - Arcadia Architecture</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Inner Page Hero -->
+    <header class="page-hero" style="background-image: url('assets/contact-hero.jpg');">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">ARCADIA</a>
+            <ul class="nav-links">
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="journal.html">JOURNAL</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">START A PROJECT &rarr;</a>
+        </nav>
+
+        <div class="hero-content text-center">
+            <span class="subtitle">GET IN TOUCH</span>
+            <h1 class="hero-title">Let's build something<br>extraordinary</h1>
+        </div>
+    </header>
+
+    <!-- Contact Details & Form Section -->
+    <section class="contact-section section-padding">
+        
+        <!-- Left Column: Contact Info -->
+        <div class="contact-info-col">
+            <h2 class="section-title">Our Office</h2>
+            
+            <div class="info-block">
+                <h4>Address</h4>
+                <p>125 Architecture Blvd, Suite 400<br>Los Angeles, CA 90014</p>
+            </div>
+            
+            <div class="info-block">
+                <h4>Contact</h4>
+                <p>hello@arcadia-arch.com<br>+1 (310) 555-0198</p>
+            </div>
+            
+            <div class="info-block socials">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Project Form -->
+        <div class="contact-form-col">
+            <form class="project-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type">
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="interior">Interior Design</option>
+                            <option value="renovation">Renovation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Estimated Budget</label>
+                        <select id="budget">
+                            <option value="under-100k">Under $100k</option>
+                            <option value="100k-500k">$100k - $500k</option>
+                            <option value="500k-1m">$500k - $1M</option>
+                            <option value="over-1m">$1M+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell us about your project</label>
+                    <textarea id="message" rows="5" placeholder="Location, goals, timeline, etc..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-dark submit-btn">SEND INQUIRY &rarr;</button>
+            </form>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

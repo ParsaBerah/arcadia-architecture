@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Arcadia Architecture</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Inner Page Hero -->
+    <header class="page-hero" style="background-image: url('assets/projects-hero.jpg');">
+        <!-- Navigation (Same as Home) -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">ARCADIA</a>
+            <ul class="nav-links">
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="journal.html">JOURNAL</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">START A PROJECT &rarr;</a>
+        </nav>
+
+        <div class="hero-content text-center">
+            <span class="subtitle">DISCOVER OUR WORK</span>
+            <h1 class="hero-title">Selected Projects</h1>
+        </div>
+    </header>
+
+    <!-- Projects Portfolio Section -->
+    <section class="portfolio-section section-padding">
+        
+        <!-- Filters -->
+        <div class="project-filters">
+            <button class="filter-btn active">All Projects</button>
+            <button class="filter-btn">Residential</button>
+            <button class="filter-btn">Commercial</button>
+            <button class="filter-btn">Interior Design</button>
+            <button class="filter-btn">Villas</button>
+        </div>
+
+        <!-- Projects Grid (2 Columns Staggered) -->
+        <div class="portfolio-grid">
+            
+            <!-- Left Column -->
+            <div class="portfolio-col">
+                <div class="project-card large-card">
+                    <img src="assets/project-1.jpg" alt="Cliff House" class="project-img">
+                    <div class="project-info">
+                        <h3>Cliff House</h3>
+                        <p>USA, CALIFORNIA<br>2023<br><span>Private Residence</span></p>
+                    </div>
+                </div>
+
+                <div class="project-card large-card">
+                    <img src="assets/project-3.jpg" alt="Urban Retreat" class="project-img">
+                    <div class="project-info">
+                        <h3>Urban Retreat</h3>
+                        <p>ITALY, ROME<br>2022<br><span>Interior Design</span></p>
+                    </div>
+                </div>
+                
+                <div class="project-card large-card">
+                    <img src="assets/project-5.jpg" alt="Desert Pavilion" class="project-img">
+                    <div class="project-info">
+                        <h3>Desert Pavilion</h3>
+                        <p>UAE, DUBAI<br>2021<br><span>Commercial</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column (Offset for architectural look) -->
+            <div class="portfolio-col offset-col">
+                <div class="project-card large-card">
+                    <img src="assets/project-2.jpg" alt="Lakeside Villa" class="project-img">
+                    <div class="project-info">
+                        <h3>Lakeside Villa</h3>
+                        <p>IRAN, TEHRAN<br>2021<br><span>Villa</span></p>
+                    </div>
+                </div>
+
+                <div class="project-card large-card">
+                    <img src="assets/project-4.jpg" alt="Aurora House" class="project-img">
+                    <div class="project-info">
+                        <h3>Aurora House</h3>
+                        <p>IRAN, SHIRAZ<br>2020<br><span>Private Residence</span></p>
+                    </div>
+                </div>
+
+                <div class="project-card large-card">
+                    <img src="assets/project-6.jpg" alt="Nordic Cabin" class="project-img">
+                    <div class="project-info">
+                        <h3>Nordic Cabin</h3>
+                        <p>NORWAY, OSLO<br>2019<br><span>Residential</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer CTA Section (Same as Home) -->
+    <footer class="footer-cta" style="background-image: url('assets/footer-bg.jpg');">
+        <div class="footer-content">
+            <h2>Let's create<br>your next space</h2>
+            <a href="contact.html" class="btn btn-outline footer-btn">GET IN TOUCH &rarr;</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

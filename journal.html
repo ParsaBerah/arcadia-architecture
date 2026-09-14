@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal - Arcadia Architecture</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Inner Page Hero -->
+    <header class="page-hero" style="background-image: url('assets/journal-hero.jpg');">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">ARCADIA</a>
+            <ul class="nav-links">
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="journal.html">JOURNAL</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline">START A PROJECT &rarr;</a>
+        </nav>
+
+        <div class="hero-content text-center">
+            <span class="subtitle">THOUGHTS & NEWS</span>
+            <h1 class="hero-title">Our Journal</h1>
+        </div>
+    </header>
+
+    <!-- Featured Post -->
+    <section class="featured-post-section section-padding">
+        <div class="featured-post">
+            <div class="featured-img-wrap">
+                <img src="assets/featured-post.jpg" alt="Featured Article" class="featured-img">
+            </div>
+            <div class="featured-content">
+                <div class="post-meta">
+                    <span class="post-category">DESIGN TRENDS</span>
+                    <span class="post-date">OCTOBER 12, 2023</span>
+                </div>
+                <h2>The Role of Natural Light in Modern Architecture</h2>
+                <p>Natural light is more than just a practical necessity; it is a fundamental element of design that shapes our perception of space, influences our mood, and connects us to the outside world...</p>
+                <a href="#" class="read-more">READ FULL ARTICLE &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts Grid -->
+    <section class="recent-posts-section section-padding bg-light">
+        <div class="section-header">
+            <h2 class="section-title">Latest Articles</h2>
+        </div>
+
+        <div class="journal-grid">
+            <!-- Post 1 -->
+            <div class="journal-card">
+                <a href="#" class="journal-img-link">
+                    <img src="assets/post-1.jpg" alt="Minimalism" class="journal-img">
+                </a>
+                <div class="journal-info">
+                    <div class="post-meta">
+                        <span class="post-category">PHILOSOPHY</span>
+                        <span class="post-date">SEPTEMBER 28, 2023</span>
+                    </div>
+                    <h3><a href="#">Embracing Warm Minimalism in Residential Spaces</a></h3>
+                    <a href="#" class="read-more">READ MORE &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="journal-card">
+                <a href="#" class="journal-img-link">
+                    <img src="assets/post-2.jpg" alt="Sustainable Materials" class="journal-img">
+                </a>
+                <div class="journal-info">
+                    <div class="post-meta">
+                        <span class="post-category">SUSTAINABILITY</span>
+                        <span class="post-date">SEPTEMBER 15, 2023</span>
+                    </div>
+                    <h3><a href="#">5 Sustainable Materials Shaping the Future of Construction</a></h3>
+                    <a href="#" class="read-more">READ MORE &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="journal-card">
+                <a href="#" class="journal-img-link">
+                    <img src="assets/post-3.jpg" alt="Urban Landscape" class="journal-img">
+                </a>
+                <div class="journal-info">
+                    <div class="post-meta">
+                        <span class="post-category">URBANISM</span>
+                        <span class="post-date">AUGUST 30, 2023</span>
+                    </div>
+                    <h3><a href="#">How Architecture Can Revitalize Urban Landscapes</a></h3>
+                    <a href="#" class="read-more">READ MORE &rarr;</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center" style="margin-top: 50px;">
+            <a href="#" class="btn btn-outline" style="color: var(--primary-color); border-color: var(--primary-color);">LOAD MORE ARTICLES</a>
+        </div>
+    </section>
+
+    <!-- Footer CTA Section -->
+    <footer class="footer-cta" style="background-image: url('assets/footer-bg.jpg');">
+        <div class="footer-content">
+            <h2>Let's create<br>your next space</h2>
+            <a href="contact.html" class="btn btn-outline footer-btn">GET IN TOUCH &rarr;</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
