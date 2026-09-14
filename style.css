@@ -105,7 +105,7 @@ a {
 /* --- Header & Hero --- */
 .hero-section {
     height: 100vh;
-    background: url('assets/hero-bg.jpg') center/cover no-repeat;
+    background: url('assets/hero-bg.webp') center/cover no-repeat;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -431,91 +431,121 @@ a {
     align-self: flex-start;
 }
 
-/* --- Footer CTA --- */
+/* --- Footer CTA (New 3-Column Layout) --- */
 .footer-cta {
-    height: 80vh;
-    background: url('assets/footer-bg.jpg') center/cover no-repeat;
     position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 8%;
+    color: #fff;
     display: flex;
-    align-items: flex-end;
-    padding: 8%;
+    align-items: center;
 }
 
+/* لایه تیره روی عکس بک‌گراند تا متن‌ها خوانا بمانند */
 .footer-cta::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%);
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
 }
 
-.footer-content {
+.footer-content-grid {
     position: relative;
     z-index: 2;
-    color: #fff;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr; /* ستون اول کمی عریض‌تر */
+    width: 100%;
+    align-items: center;
 }
 
-.footer-content h2 {
-    font-size: 4rem;
+.footer-col {
+    padding: 0 40px;
+}
+
+/* خطوط عمودی ظریف بین ستون‌ها (طبق عکس) */
+.footer-col-center {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 60px;
+}
+
+.footer-col-right {
+    padding-left: 60px;
+}
+
+.footer-col-left {
+    padding-left: 0;
+}
+
+.footer-col-left h2 {
+    font-size: 3.5rem;
     color: #fff;
-    line-height: 1.1;
+    line-height: 1.2;
+    margin-bottom: 35px;
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+/* استایل بخش‌های تماس و شبکه‌های اجتماعی */
+.contact-item {
     margin-bottom: 30px;
 }
 
-/* --- Responsive Design Basics --- */
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item span {
+    display: block;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 5px;
+    font-family: var(--font-heading);
+}
+
+.contact-item p {
+    font-size: 1rem;
+    color: #fff;
+    font-family: var(--font-heading); /* فونت‌های این بخش در عکس کلاسیک هستند */
+    letter-spacing: 0.5px;
+}
+
+.social-text-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-text-links a {
+    font-size: 1rem;
+    color: #fff;
+    font-family: var(--font-heading);
+    transition: var(--transition);
+}
+
+.social-text-links a:hover {
+    color: #c1a892;
+}
+
+/* ریسپانسیو کردن فوتر برای موبایل و تبلت */
 @media (max-width: 1024px) {
-
-    .projects-grid,
-    .philosophy-right {
-        grid-template-columns: repeat(2, 1fr);
-        flex-wrap: wrap;
+    .footer-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
-
-    .services-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .footer-col, .footer-col-center, .footer-col-right, .footer-col-left {
+        padding: 0;
     }
-
-    .founder-section {
-        flex-direction: column;
-    }
-
-    .founder-stats {
+    .footer-col-center {
         border-left: none;
-        border-top: 1px solid var(--border-color);
-        padding-top: 40px;
-        padding-left: 0;
-        flex-direction: row;
+        border-right: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 40px 0;
     }
-}
-
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 3rem;
-    }
-
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .philosophy-section,
-    .project-col {
-        flex-direction: column;
-    }
-
-    .project-col.offset-col {
-        padding-top: 0;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    /* Mobile menu needed */
-}
-
-/* =========================================
+}/* =========================================
    INNER PAGES STYLES (Projects, About, etc.)
    ========================================= */
 
@@ -1094,5 +1124,55 @@ a {
     .form-row {
         flex-direction: column;
         gap: 40px;
+    }
+}
+/* =========================================
+   BOTTOM COPYRIGHT FOOTER
+   ========================================= */
+
+.site-footer {
+    background-color: #fff;
+    padding: 35px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color); /* یک خط خیلی کمرنگ در بالای فوتر */
+    font-family: var(--font-heading); /* استفاده از فونت کلاسیک (شبیه عکس) */
+    font-size: 0.9rem;
+}
+
+.site-footer .footer-left,
+.site-footer .footer-right {
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.site-footer .footer-center {
+    display: flex;
+    gap: 40px;
+}
+
+.site-footer .footer-center a {
+    color: #888;
+    font-family: var(--font-body); /* فونت ساده برای لینک‌ها */
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.site-footer .footer-center a:hover {
+    color: var(--primary-color);
+}
+
+/* برای اینکه در موبایل هم مرتب و زیبا نمایش داده شود */
+@media (max-width: 768px) {
+    .site-footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 30px 5%;
+    }
+    .site-footer .footer-center {
+        gap: 20px;
     }
 }
