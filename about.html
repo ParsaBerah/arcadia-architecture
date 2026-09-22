@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Header & Inner Page Hero -->
@@ -19,21 +23,20 @@
         <!-- Navigation -->
         <nav class="navbar">
             <a href="index.html" class="logo">ARCADIA</a>
-            
-            <!-- دکمه منوی موبایل -->
+
             <div class="menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            
+
             <ul class="nav-links">
                 <li><a href="projects.html">PROJECTS</a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="journal.html">JOURNAL</a></li>
-                <!-- لینک دکمه تماس در داخل منوی موبایل هم اضافه شد -->
+
                 <li class="mobile-only-btn"><a href="contact.html">START A PROJECT</a></li>
             </ul>
-            
+
             <a href="contact.html" class="btn btn-outline desktop-btn">START A PROJECT &rarr;</a>
         </nav>
 
@@ -46,12 +49,17 @@
     <!-- Our Vision & Story Section -->
     <section class="about-story section-padding">
         <div class="story-left">
-            <h2>We believe that good architecture is not just about the buildings, but about the people who inhabit them.</h2>
+            <h2>We believe that good architecture is not just about the buildings, but about the people who inhabit
+                them.</h2>
         </div>
         <div class="story-right">
-            <p>Founded in 2010 by Parsa Berahman, Arcadia started as a small boutique studio with a grand vision: to redefine modern living through sustainable and deeply human-centric design.</p>
-            <p>Over the past decade, our team has grown into a diverse group of architects, interior designers, and urban planners. We approach every project as a unique challenge, carefully studying the environment, culture, and specific needs of our clients.</p>
-            <p>Our philosophy is rooted in timelessness. We don't follow fleeting trends; instead, we aim to create spaces that will stand the test of time and age beautifully alongside the people who use them.</p>
+            <p>Founded in 2010 by Parsa Berahman, Arcadia started as a small boutique studio with a grand vision: to
+                redefine modern living through sustainable and deeply human-centric design.</p>
+            <p>Over the past decade, our team has grown into a diverse group of architects, interior designers, and
+                urban planners. We approach every project as a unique challenge, carefully studying the environment,
+                culture, and specific needs of our clients.</p>
+            <p>Our philosophy is rooted in timelessness. We don't follow fleeting trends; instead, we aim to create
+                spaces that will stand the test of time and age beautifully alongside the people who use them.</p>
         </div>
     </section>
 
@@ -63,7 +71,9 @@
         <div class="founder-content">
             <span class="section-subtitle">THE FOUNDER</span>
             <h2 class="section-title">PARSA BERAHMAN</h2>
-            <p class="description">"Architecture is a deeply personal endeavor. Every line we draw, every material we choose, is meant to evoke an emotion and create a lasting connection between the human spirit and the physical space."</p>
+            <p class="description">"Architecture is a deeply personal endeavor. Every line we draw, every material we
+                choose, is meant to evoke an emotion and create a lasting connection between the human spirit and the
+                physical space."</p>
             <div class="founder-signature">
                 <img src="assets/signature.webp" alt="Signature" class="signature">
             </div>
@@ -123,14 +133,61 @@
         </div>
     </section>
 
-    <!-- Footer CTA Section -->
+    <!-- Main Footer CTA Section (3 Columns) -->
     <footer class="footer-cta" style="background-image: url('assets/footer-bg.webp');">
-        <div class="footer-content">
-            <h2>Let's create<br>your next space</h2>
-            <a href="contact.html" class="btn btn-outline footer-btn">GET IN TOUCH &rarr;</a>
+        <div class="footer-content-grid">
+
+            <!-- Column 1: Title & Button -->
+            <div class="footer-col footer-col-left">
+                <h2>Let's create<br>your next space</h2>
+                <a href="contact.html" class="btn btn-outline footer-btn">START A PROJECT &rarr;</a>
+            </div>
+
+            <!-- Column 2: Contact Info -->
+            <div class="footer-col footer-col-center">
+                <div class="contact-item">
+                    <span>Email</span>
+                    <p>parsaberahman18@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <span>Phone</span>
+                    <p>+98 9123456789</p>
+                </div>
+                <div class="contact-item">
+                    <span>Location</span>
+                    <p>Iran, Shiraz</p>
+                </div>
+            </div>
+
+            <!-- Column 3: Social Media -->
+            <div class="footer-col footer-col-right">
+                <div class="contact-item">
+                    <span>Social Media</span>
+                    <div class="social-text-links">
+                        <a href="https://madebyparsa.com/">Instagram</a>
+                        <a href="https://madebyparsa.com/">Telegram</a>
+                        <a href="https://madebyparsa.com/">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Main Site Footer (Copyright) -->
+    <footer class="site-footer">
+        <div class="footer-left">
+            &copy; 2026 Parsa Berahman - UI/UX Designer
+        </div>
+        <div class="footer-center">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of use</a>
+        </div>
+        <div class="footer-right">
+            Design by Parsa Berahman
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
