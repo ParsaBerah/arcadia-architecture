@@ -1302,3 +1302,42 @@ p, a, h1, h2, h3, span {
         font-size: 2rem !important;
     }
 }
+/* =========================================
+   FIX OVERFLOW FOR PHILOSOPHY & FOUNDER SECTIONS
+   ========================================= */
+
+@media (max-width: 768px) {
+    /* اصلاح بخش Founder (A cutting edge firm) */
+    .founder-section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 5% !important;
+    }
+    
+    .founder-img-wrapper, 
+    .founder-content, 
+    .founder-stats {
+        width: 100%;
+        flex: none;
+        padding: 0;
+    }
+
+    /* اصلاح بخش Philosophy */
+    .philosophy-section {
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px 5% !important;
+    }
+    
+    .philosophy-left, 
+    .philosophy-right {
+        width: 100%;
+        flex: none;
+    }
+    
+    .philosophy-right {
+        display: grid;
+        grid-template-columns: 1fr; /* قرارگیری آیتم‌ها زیر هم در موبایل */
+        gap: 30px;
+    }
+}
