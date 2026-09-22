@@ -1245,3 +1245,60 @@ a {
     .hero-title { font-size: 2.2rem; }
     .large-card .project-img, .small-card .project-img { height: 280px; }
 }
+/* =========================================
+   STRICT MOBILE OVERFLOW FIXES
+   ========================================= */
+
+/* قفل کردن قطعی عرض کل سایت */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* جلوگیری از بیرون زدن متن‌های طولانی مثل ایمیل در فوتر */
+p, a, h1, h2, h3, span {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    /* زیر هم انداختن دکمه‌های هدر در گوشی */
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
+    }
+    .btn-text {
+        margin-left: 0 !important;
+        padding-top: 0;
+    }
+
+    /* اصلاح بخش آمار (Founder Stats) که به صورت افقی گیر نکنند */
+    .founder-stats {
+        flex-direction: column !important;
+        gap: 30px !important;
+        padding-top: 30px !important;
+    }
+
+    /* اصلاح فواصل فوتر اصلی تا از کادر بیرون نزند */
+    .footer-cta {
+        padding: 60px 5% !important;
+    }
+    
+    .footer-content-grid {
+        gap: 30px;
+    }
+
+    /* کوچک‌تر کردن فونت‌های خیلی بزرگ که باعث شکستن کادر می‌شوند */
+    .hero-title {
+        font-size: 2.2rem !important;
+    }
+    .section-title {
+        font-size: 1.8rem !important;
+    }
+    .footer-col-left h2 {
+        font-size: 2rem !important;
+    }
+}
