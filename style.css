@@ -1341,3 +1341,60 @@ p, a, h1, h2, h3, span {
         gap: 30px;
     }
 }
+
+
+/* =========================================
+   ULTIMATE MOBILE FIX (UNDER 768px & 480px)
+   ========================================= */
+
+@media (max-width: 768px) {
+    /* --- شکستن مقاومت بخش Founder --- */
+    .founder-section {
+        flex-direction: column !important;
+        display: flex !important;
+        padding: 50px 5% !important;
+    }
+    
+    .founder-content, 
+    .founder-img-wrapper {
+        width: 100% !important;
+    }
+
+    .founder-signature {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 15px !important;
+    }
+
+    .founder-stats {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important; /* آمارها کاملا زیر هم قرار بگیرند */
+        border-left: none !important;
+        border-top: 1px solid var(--border-color) !important;
+        padding-left: 0 !important;
+        padding-top: 40px !important;
+        margin-top: 20px !important;
+        gap: 30px !important;
+    }
+
+    /* --- شکستن مقاومت بخش Philosophy --- */
+    .philosophy-section {
+        flex-direction: column !important;
+        display: flex !important;
+        padding: 50px 5% !important;
+    }
+
+    .philosophy-left, 
+    .philosophy-right {
+        width: 100% !important;
+    }
+
+    .philosophy-right {
+        display: grid !important;
+        /* این دستور حیاتی است: ۴ ستون را به ۱ ستون تبدیل می‌کند */
+        grid-template-columns: 1fr !important; 
+        gap: 40px !important;
+        margin-top: 30px !important;
+    }
+}
